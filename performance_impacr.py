@@ -68,6 +68,7 @@ for i in range(4):
         m_r = retr_mf * p.m / (1 - retr_mf)
         m = p.m + m_r
         print(m)
+        m = p.m
         CL = get_CL(m, p.g, p.rho, V, p.S)
         CD = get_CD(p.CD_min, DR, p.k, CL, p.CL_minD)
         R = get_R(p.E_star, p.n_prop, p.g, CL, CD, p.bat_mf, retr_mf, p.Ecr_Et)
